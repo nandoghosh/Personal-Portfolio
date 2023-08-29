@@ -22,7 +22,8 @@
     background: #FFF8F3;
     background-image: url(./images/header_bg.png), url(./images/developer.png);
     background-repeat: no-repeat;
-    background-position: bottom right, left center;
+    background-position: bottom right, left 65px top 30px;;
+
 }
 
 /* Header and navigation styles*/
@@ -30,7 +31,8 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    padding: 50px 200px;
+    ;
 }
 
 nav ul {
@@ -197,20 +199,26 @@ section {
     background: #FFF8F3;
     padding: 130px 200px;
 }
-.contact a{
+
+.contact a {
     text-decoration: none;
     margin: 20px;
 }
+
 .contact .section-title {
     text-align: left;
 }
-.contact input[type="text"], input[type="email"], textarea{
+
+.contact input[type="text"],
+input[type="email"],
+textarea {
     margin-bottom: 24px;
     border: 0;
     width: 100%;
     padding: 18px 30px;
 
 }
-input{
+
+input {
     height: 64px;
 }
