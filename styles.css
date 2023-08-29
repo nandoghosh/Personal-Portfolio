@@ -22,7 +22,7 @@
     background: #FFF8F3;
     background-image: url(./images/header_bg.png), url(./images/developer.png);
     background-repeat: no-repeat;
-    background-position: bottom right, left;
+    background-position: bottom right, left center;
 }
 
 /* Header and navigation styles*/
@@ -78,9 +78,11 @@ main {
     max-width: 1140px;
     margin: 0 auto;
 }
-section{
+
+section {
     margin-top: 130px;
 }
+
 /* About Section Styles */
 .about {
     border-radius: 10px;
@@ -121,9 +123,9 @@ section{
 }
 
 /* What I Do Styles */
-/* .What {
+.What {
     text-align: center;
-} */
+}
 
 .skills-container {
     display: flex;
@@ -150,34 +152,65 @@ section{
 }
 
 /* Resume Styles */
-.resume-content{
+.resume-content {
     display: flex;
     gap: 24px;
 }
-.resume-item{
+
+.resume-item {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.resume-title{
+
+.resume-title {
     font-size: 30px;
     margin-bottom: 20px;
 }
-.resume .title{
+
+.resume .title {
     font-family: 700;
     font-size: 25px;
     color: #474747;
     margin-bottom: 5px;
 }
-.resume .sub-title{
+
+.resume .sub-title {
     font-weight: 600;
     font-size: 20px;
     color: #757575;
     margin-bottom: 10px;
 }
-.resume .description{
+
+.resume .description {
     color: #757575;
 }
-.resume-button{
+
+.resume-button {
     margin-top: 50px;
     text-align: center;
+}
+
+/* Content Styles */
+.contact {
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 200px;
+}
+.contact a{
+    text-decoration: none;
+    margin: 20px;
+}
+.contact .section-title {
+    text-align: left;
+}
+.contact input[type="text"], input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+
+}
+input{
+    height: 64px;
 }
