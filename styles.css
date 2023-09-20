@@ -43,6 +43,7 @@ nav ul {
 nav li {
     list-style: none;
     margin-left: 50px;
+    font-weight: 700;
 }
 
 .nav-title {
@@ -223,3 +224,52 @@ textarea {
 input {
     height: 64px;
 }
+
+/* Responsive Styles */
+
+@media screen and (max-width: 576px) {
+    .header{
+        background-image: none;
+    }
+    nav,
+    .banner, 
+    .skills-container, 
+    .resume-content, 
+    .about-info-container, 
+    .contact{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .banner{
+        margin: 0px 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        align-items: end;
+
+    }
+    
+    .about, .contact{
+        padding: 20px;
+    }
+    .contact input[type="text"],
+    input[type="email"],
+    textarea{
+        padding: 0px 0px 0px 5px;
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width: 992px) {
+    .about, .contact{
+        padding: 20px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+}
+
