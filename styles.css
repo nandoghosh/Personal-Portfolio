@@ -242,6 +242,7 @@ input {
     }
     .banner{
         margin: 0px 20px;
+        flex-direction: column-reverse;
     }
     .banner img{
         width: 100%;
